@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DA1DC2B1AADB7E900A69496 /* nscrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DA1DC2A1AADB7E900A69496 /* nscrypto.h */; };
+		1DA1DC431AADB85700A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
+		1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cpp */; };
+		1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1DA1DC251AADB7E900A69496 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1DA1DC2B1AADB7E900A69496 /* nscrypto.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DA1DC461AADDB7900A69496 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1DA1DC271AADB7E900A69496 /* libnscrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnscrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA1DC2A1AADB7E900A69496 /* nscrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nscrypto.h; sourceTree = "<group>"; };
+		1DA1DC411AADB85700A69496 /* nscrypto_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nscrypto_ecdh.h; sourceTree = "<group>"; };
+		1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nscrypto_ecdh.cc; sourceTree = "<group>"; };
+		1DA1DC481AADDB7900A69496 /* nscryptoTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscryptoTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA1DC4A1AADDB7900A69496 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DA1DC241AADB7E900A69496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DA1DC451AADDB7900A69496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DA1DC1E1AADB7E900A69496 = {
+			isa = PBXGroup;
+			children = (
+				1DA1DC291AADB7E900A69496 /* nscrypto */,
+				1DA1DC491AADDB7900A69496 /* nscryptoTests */,
+				1DA1DC281AADB7E900A69496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DA1DC281AADB7E900A69496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1DC271AADB7E900A69496 /* libnscrypto.a */,
+				1DA1DC481AADDB7900A69496 /* nscryptoTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DA1DC291AADB7E900A69496 /* nscrypto */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1DC411AADB85700A69496 /* nscrypto_ecdh.h */,
+				1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */,
+				1DA1DC2A1AADB7E900A69496 /* nscrypto.h */,
+			);
+			path = nscrypto;
+			sourceTree = "<group>";
+		};
+		1DA1DC491AADDB7900A69496 /* nscryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1DC4A1AADDB7900A69496 /* main.cpp */,
+			);
+			path = nscryptoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DA1DC261AADB7E900A69496 /* nscrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DA1DC3B1AADB7E900A69496 /* Build configuration list for PBXNativeTarget "nscrypto" */;
+			buildPhases = (
+				1DA1DC231AADB7E900A69496 /* Sources */,
+				1DA1DC241AADB7E900A69496 /* Frameworks */,
+				1DA1DC251AADB7E900A69496 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nscrypto;
+			productName = nscrypto;
+			productReference = 1DA1DC271AADB7E900A69496 /* libnscrypto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1DA1DC471AADDB7900A69496 /* nscryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DA1DC4C1AADDB7900A69496 /* Build configuration list for PBXNativeTarget "nscryptoTests" */;
+			buildPhases = (
+				1DA1DC441AADDB7900A69496 /* Sources */,
+				1DA1DC451AADDB7900A69496 /* Frameworks */,
+				1DA1DC461AADDB7900A69496 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nscryptoTests;
+			productName = nscryptoTests;
+			productReference = 1DA1DC481AADDB7900A69496 /* nscryptoTests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DA1DC1F1AADB7E900A69496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = NowSecure;
+				TargetAttributes = {
+					1DA1DC261AADB7E900A69496 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					1DA1DC471AADDB7900A69496 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1DA1DC221AADB7E900A69496 /* Build configuration list for PBXProject "nscrypto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1DA1DC1E1AADB7E900A69496;
+			productRefGroup = 1DA1DC281AADB7E900A69496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DA1DC261AADB7E900A69496 /* nscrypto */,
+				1DA1DC471AADDB7900A69496 /* nscryptoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DA1DC231AADB7E900A69496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA1DC431AADB85700A69496 /* nscrypto_ecdh.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DA1DC441AADDB7900A69496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */,
+				1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DA1DC391AADB7E900A69496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DA1DC3A1AADB7E900A69496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DA1DC3C1AADB7E900A69496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		1DA1DC3D1AADB7E900A69496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		1DA1DC4D1AADDB7900A69496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1DA1DC4E1AADDB7900A69496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DA1DC221AADB7E900A69496 /* Build configuration list for PBXProject "nscrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA1DC391AADB7E900A69496 /* Debug */,
+				1DA1DC3A1AADB7E900A69496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DA1DC3B1AADB7E900A69496 /* Build configuration list for PBXNativeTarget "nscrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA1DC3C1AADB7E900A69496 /* Debug */,
+				1DA1DC3D1AADB7E900A69496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DA1DC4C1AADDB7900A69496 /* Build configuration list for PBXNativeTarget "nscryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA1DC4D1AADDB7900A69496 /* Debug */,
+				1DA1DC4E1AADDB7900A69496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DA1DC1F1AADB7E900A69496 /* Project object */;
+}
