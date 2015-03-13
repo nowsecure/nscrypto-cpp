@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D60B1361AB2D41B006B6A16 /* vp_ecdh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */; };
 		1DA1DC2B1AADB7E900A69496 /* nscrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DA1DC2A1AADB7E900A69496 /* nscrypto.h */; };
 		1DA1DC431AADB85700A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
 		1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cpp */; };
@@ -36,6 +37,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D60B1341AB2D41B006B6A16 /* vp_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp_ecdh.h; sourceTree = "<group>"; };
+		1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vp_ecdh.cpp; sourceTree = "<group>"; };
+		1D60B1371AB2E9B4006B6A16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D60B1381AB2E9B4006B6A16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1DA1DC271AADB7E900A69496 /* libnscrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnscrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA1DC2A1AADB7E900A69496 /* nscrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nscrypto.h; sourceTree = "<group>"; };
 		1DA1DC411AADB85700A69496 /* nscrypto_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nscrypto_ecdh.h; sourceTree = "<group>"; };
@@ -65,6 +70,8 @@
 		1DA1DC1E1AADB7E900A69496 = {
 			isa = PBXGroup;
 			children = (
+				1D60B1371AB2E9B4006B6A16 /* README.md */,
+				1D60B1381AB2E9B4006B6A16 /* LICENSE */,
 				1DA1DC291AADB7E900A69496 /* nscrypto */,
 				1DA1DC491AADDB7900A69496 /* nscryptoTests */,
 				1DA1DC281AADB7E900A69496 /* Products */,
@@ -93,6 +100,8 @@
 		1DA1DC491AADDB7900A69496 /* nscryptoTests */ = {
 			isa = PBXGroup;
 			children = (
+				1D60B1341AB2D41B006B6A16 /* vp_ecdh.h */,
+				1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */,
 				1DA1DC4A1AADDB7900A69496 /* main.cpp */,
 			);
 			path = nscryptoTests;
@@ -141,7 +150,7 @@
 		1DA1DC1F1AADB7E900A69496 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = NowSecure;
 				TargetAttributes = {
 					1DA1DC261AADB7E900A69496 = {
@@ -184,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */,
+				1D60B1361AB2D41B006B6A16 /* vp_ecdh.cpp in Sources */,
 				1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +244,7 @@
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -283,6 +294,7 @@
 		1DA1DC3C1AADB7E900A69496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				GENERATE_MASTER_OBJECT_FILE = YES;
@@ -296,6 +308,7 @@
 		1DA1DC3D1AADB7E900A69496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				GENERATE_MASTER_OBJECT_FILE = YES;
