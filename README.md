@@ -23,7 +23,7 @@ void alice_encrypt() {
 
     // Generate keys
     std::string alice_private, alice_public;
-    std::tie(alice_private, alice_private) = ec_keypair();
+    std::tie(alice_private, alice_public) = ec_keypair();
 
     // Encrypt
     ecdh_encrypted_t encrypted(ecdh_client_encrypt(alice_private, bob_public, "Alice", "Bob", message));
