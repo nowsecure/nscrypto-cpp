@@ -4,7 +4,7 @@ A C++11 library providing simple API for public-key encryption
 
 # Description  
 
-`nscrypto-cpp` is a C++ libary implementing a simple API for encrypting and decrypting data using [hybrid encryption](http://en.wikipedia.org/wiki/Hybrid_cryptosystem). It usese [elliptic-curve Diffie-Hellman](http://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman) for key agreement and [AES](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard)-[GCM](http://en.wikipedia.org/wiki/Galois/Counter_Mode) for data encryption and authentication.   
+`nscrypto-cpp` is a C++ library implementing a simple API for encrypting and decrypting data using [hybrid encryption](http://en.wikipedia.org/wiki/Hybrid_cryptosystem). It uses [elliptic-curve Diffie-Hellman](http://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman) for key agreement and [AES](http://en.wikipedia.org/wiki/Advanced_Encryption_Standard)-[GCM](http://en.wikipedia.org/wiki/Galois/Counter_Mode) for data encryption and authentication.   
 
 Library implements C(1e, 2s) scheme from [NIST SP 800-56A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Ar2.pdf) (see section 6.2.1). It uses NIST P-256 curve (a.k.a. secp256r1, a.k.a X9.62 prime256v1) and [SHA-256](http://en.wikipedia.org/wiki/SHA-2) for ECDH key agreement and AES-128 in GCM mode for data encryption.  
 
