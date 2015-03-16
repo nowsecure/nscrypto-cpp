@@ -1,8 +1,9 @@
 #include "nscrypto_ecdh.h"
 
-#include <functional>
-#include <vector>
 #include <cassert>
+#include <functional>
+#include <memory>
+#include <vector>
 
 #include <stdint.h>
 
