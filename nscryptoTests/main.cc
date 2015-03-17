@@ -16,11 +16,11 @@ using std::unique_ptr;
 using std::string;
 using std::tie;
 
-#ifdef __APPLE__
-    #include <stdlib.h>
-#else
+#ifdef __linux__
     #include <bsd/stdlib.h>
-#endif //__APPLE__
+#else
+    #include <stdlib.h>
+#endif //__linux__
 
 #include "vp_ecdh.h"
 
@@ -268,7 +268,6 @@ TEST_CASE("nscrypto ecdh", "[nscrypto]") {
                 REQUIRE(vp_eph != NULL);
                 REQUIRE(VP_EC_KEY_export_public(vp_eph) == eph);
                 
-                //string decrypted(ecdh_server_decrypt(r_priv, s_pub, s_id, r_id, encrypted));
                 string decrypted(VP_ECDH_decrypt(vp_r_priv, vp_s_pub, vp_eph, s_id, r_id, string("\x00\x00\x00\x01", 4), enc, tag));
                 
                 REQUIRE(!decrypted.empty());
@@ -290,7 +289,6 @@ TEST_CASE("nscrypto ecdh", "[nscrypto]") {
                 REQUIRE(vp_eph != NULL);
                 REQUIRE(VP_EC_KEY_export_public(vp_eph) == eph);
                 
-                //string decrypted(ecdh_client_decrypt(r_priv, s_pub, s_id, r_id, encrypted));
                 string decrypted(VP_ECDH_decrypt(vp_r_priv, vp_s_pub, vp_eph, s_id, r_id, string("\x00\x00\x00\x02", 4), enc, tag));
                 
                 REQUIRE(!decrypted.empty());
