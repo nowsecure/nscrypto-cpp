@@ -1,14 +1,14 @@
-cmake_minimum_required(VERSION 3.1)
-project(nscryptoTests)
+cmake_minimum_required(VERSION 2.8)
+
+project(nscrypto)
+set(nscrypto_VERSION_MAJOR 1)
+set(nscrypto_VERSION_MINOR 0)
 
 include_directories(nscrypto include)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Werror -Wno-unknown-pragmas")
 
-set(SOURCE_FILES
-    nscryptoTests/main.cpp
-    nscrypto/nscrypto_ecdh.cc
-    nscryptoTests/vp_ecdh.cpp)
+add_library(nscrypto nscrypto/nscrypto_ecdh.cc)
+add_executable(nscrypto_tests nscryptoTests/main.cpp nscryptoTests/vp_ecdh.cpp)
 
-add_executable(nscryptoTests ${SOURCE_FILES})
-target_link_libraries(nscryptoTests crypto bsd)
+target_link_libraries(nscrypto_tests nscrypto crypto bsd)

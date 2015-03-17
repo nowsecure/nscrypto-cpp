@@ -8,7 +8,7 @@
 #ifdef _EXTRA_LOGGING
     #define LogMsg(frmt, ...)       fprintf(stderr, "%s: " frmt "\n", __FUNCTION__, ##__VA_ARGS__)
 #else
-    #define LogMsg(frmt, ...)       ((void*)0)
+    #define LogMsg(frmt, ...)
 #endif //_EXTRA_LOGGING
 
 #define LogTrace()              LogMsg("")
