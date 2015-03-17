@@ -18,6 +18,23 @@
       "defines" : [
         "__NODE_JS__",
       ],
-    }
-  ]
+      "conditions": [
+        ["OS == 'mac'", {
+          "include_dirs": [
+            "../../include",
+          ],          
+          "xcode_settings": {
+          	"LIBRARY_SEARCH_PATHS": ["../../lib"],
+            "MACOSX_DEPLOYMENT_TARGET": "10.7",
+            "OTHER_CFLAGS": [
+              "-std=c++11",
+              "-stdlib=libc++",
+              "-Wno-unused-function",
+              "-Wno-deprecated-declarations",
+            ],
+          },
+        }],
+      ],
+    },
+  ],
 }
