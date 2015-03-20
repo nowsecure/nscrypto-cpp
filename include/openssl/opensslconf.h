@@ -11,47 +11,11 @@ extern "C" {
 #ifndef OPENSSL_DOING_MAKEDEPEND
 
 
-#ifndef OPENSSL_NO_BF
-# define OPENSSL_NO_BF
-#endif
-#ifndef OPENSSL_NO_CAMELLIA
-# define OPENSSL_NO_CAMELLIA
-#endif
-#ifndef OPENSSL_NO_CAST
-# define OPENSSL_NO_CAST
-#endif
-#ifndef OPENSSL_NO_CMAC
-# define OPENSSL_NO_CMAC
-#endif
-#ifndef OPENSSL_NO_COMP
-# define OPENSSL_NO_COMP
-#endif
-#ifndef OPENSSL_NO_CONF
-# define OPENSSL_NO_CONF
-#endif
-#ifndef OPENSSL_NO_DH
-# define OPENSSL_NO_DH
-#endif
-#ifndef OPENSSL_NO_DSA
-# define OPENSSL_NO_DSA
-#endif
 #ifndef OPENSSL_NO_EC_NISTP_64_GCC_128
 # define OPENSSL_NO_EC_NISTP_64_GCC_128
 #endif
-#ifndef OPENSSL_NO_ENGINE
-# define OPENSSL_NO_ENGINE
-#endif
 #ifndef OPENSSL_NO_GMP
 # define OPENSSL_NO_GMP
-#endif
-#ifndef OPENSSL_NO_GOST
-# define OPENSSL_NO_GOST
-#endif
-#ifndef OPENSSL_NO_HEARTBEATS
-# define OPENSSL_NO_HEARTBEATS
-#endif
-#ifndef OPENSSL_NO_IDEA
-# define OPENSSL_NO_IDEA
 #endif
 #ifndef OPENSSL_NO_JPAKE
 # define OPENSSL_NO_JPAKE
@@ -59,41 +23,11 @@ extern "C" {
 #ifndef OPENSSL_NO_KRB5
 # define OPENSSL_NO_KRB5
 #endif
-#ifndef OPENSSL_NO_LHASH
-# define OPENSSL_NO_LHASH
-#endif
 #ifndef OPENSSL_NO_LIBUNBOUND
 # define OPENSSL_NO_LIBUNBOUND
 #endif
 #ifndef OPENSSL_NO_MD2
 # define OPENSSL_NO_MD2
-#endif
-#ifndef OPENSSL_NO_MD4
-# define OPENSSL_NO_MD4
-#endif
-#ifndef OPENSSL_NO_MDC2
-# define OPENSSL_NO_MDC2
-#endif
-#ifndef OPENSSL_NO_OBJECTS
-# define OPENSSL_NO_OBJECTS
-#endif
-#ifndef OPENSSL_NO_OCSP
-# define OPENSSL_NO_OCSP
-#endif
-#ifndef OPENSSL_NO_PEM
-# define OPENSSL_NO_PEM
-#endif
-#ifndef OPENSSL_NO_PKCS12
-# define OPENSSL_NO_PKCS12
-#endif
-#ifndef OPENSSL_NO_PKCS7
-# define OPENSSL_NO_PKCS7
-#endif
-#ifndef OPENSSL_NO_RC2
-# define OPENSSL_NO_RC2
-#endif
-#ifndef OPENSSL_NO_RC4
-# define OPENSSL_NO_RC4
 #endif
 #ifndef OPENSSL_NO_RC5
 # define OPENSSL_NO_RC5
@@ -101,74 +35,23 @@ extern "C" {
 #ifndef OPENSSL_NO_RFC3779
 # define OPENSSL_NO_RFC3779
 #endif
-#ifndef OPENSSL_NO_RIPEMD
-# define OPENSSL_NO_RIPEMD
-#endif
-#ifndef OPENSSL_NO_RSA
-# define OPENSSL_NO_RSA
-#endif
-#ifndef OPENSSL_NO_RSAX
-# define OPENSSL_NO_RSAX
-#endif
 #ifndef OPENSSL_NO_SCTP
 # define OPENSSL_NO_SCTP
-#endif
-#ifndef OPENSSL_NO_SEED
-# define OPENSSL_NO_SEED
-#endif
-#ifndef OPENSSL_NO_SOCK
-# define OPENSSL_NO_SOCK
-#endif
-#ifndef OPENSSL_NO_SRP
-# define OPENSSL_NO_SRP
-#endif
-#ifndef OPENSSL_NO_SRTP
-# define OPENSSL_NO_SRTP
 #endif
 #ifndef OPENSSL_NO_SSL_TRACE
 # define OPENSSL_NO_SSL_TRACE
 #endif
-#ifndef OPENSSL_NO_SSL2
-# define OPENSSL_NO_SSL2
-#endif
-#ifndef OPENSSL_NO_SSL3
-# define OPENSSL_NO_SSL3
-#endif
 #ifndef OPENSSL_NO_STORE
 # define OPENSSL_NO_STORE
 #endif
-#ifndef OPENSSL_NO_TLS1
-# define OPENSSL_NO_TLS1
-#endif
-#ifndef OPENSSL_NO_TLSEXT
-# define OPENSSL_NO_TLSEXT
-#endif
-#ifndef OPENSSL_NO_TS
-# define OPENSSL_NO_TS
-#endif
-#ifndef OPENSSL_NO_UI
-# define OPENSSL_NO_UI
-#endif
 #ifndef OPENSSL_NO_UNIT_TEST
 # define OPENSSL_NO_UNIT_TEST
-#endif
-#ifndef OPENSSL_NO_WHIRPOOL
-# define OPENSSL_NO_WHIRPOOL
-#endif
-#ifndef OPENSSL_NO_X509
-# define OPENSSL_NO_X509
-#endif
-#ifndef OPENSSL_NO_X509V3
-# define OPENSSL_NO_X509V3
 #endif
 
 #endif /* OPENSSL_DOING_MAKEDEPEND */
 
 #ifndef OPENSSL_THREADS
 # define OPENSSL_THREADS
-#endif
-#ifndef OPENSSL_NO_ERR
-# define OPENSSL_NO_ERR
 #endif
 #ifndef OPENSSL_NO_DYNAMIC_ENGINE
 # define OPENSSL_NO_DYNAMIC_ENGINE
@@ -179,47 +62,11 @@ extern "C" {
    who haven't had the time to do the appropriate changes in their
    applications.  */
 #ifdef OPENSSL_ALGORITHM_DEFINES
-# if defined(OPENSSL_NO_BF) && !defined(NO_BF)
-#  define NO_BF
-# endif
-# if defined(OPENSSL_NO_CAMELLIA) && !defined(NO_CAMELLIA)
-#  define NO_CAMELLIA
-# endif
-# if defined(OPENSSL_NO_CAST) && !defined(NO_CAST)
-#  define NO_CAST
-# endif
-# if defined(OPENSSL_NO_CMAC) && !defined(NO_CMAC)
-#  define NO_CMAC
-# endif
-# if defined(OPENSSL_NO_COMP) && !defined(NO_COMP)
-#  define NO_COMP
-# endif
-# if defined(OPENSSL_NO_CONF) && !defined(NO_CONF)
-#  define NO_CONF
-# endif
-# if defined(OPENSSL_NO_DH) && !defined(NO_DH)
-#  define NO_DH
-# endif
-# if defined(OPENSSL_NO_DSA) && !defined(NO_DSA)
-#  define NO_DSA
-# endif
 # if defined(OPENSSL_NO_EC_NISTP_64_GCC_128) && !defined(NO_EC_NISTP_64_GCC_128)
 #  define NO_EC_NISTP_64_GCC_128
 # endif
-# if defined(OPENSSL_NO_ENGINE) && !defined(NO_ENGINE)
-#  define NO_ENGINE
-# endif
 # if defined(OPENSSL_NO_GMP) && !defined(NO_GMP)
 #  define NO_GMP
-# endif
-# if defined(OPENSSL_NO_GOST) && !defined(NO_GOST)
-#  define NO_GOST
-# endif
-# if defined(OPENSSL_NO_HEARTBEATS) && !defined(NO_HEARTBEATS)
-#  define NO_HEARTBEATS
-# endif
-# if defined(OPENSSL_NO_IDEA) && !defined(NO_IDEA)
-#  define NO_IDEA
 # endif
 # if defined(OPENSSL_NO_JPAKE) && !defined(NO_JPAKE)
 #  define NO_JPAKE
@@ -227,41 +74,11 @@ extern "C" {
 # if defined(OPENSSL_NO_KRB5) && !defined(NO_KRB5)
 #  define NO_KRB5
 # endif
-# if defined(OPENSSL_NO_LHASH) && !defined(NO_LHASH)
-#  define NO_LHASH
-# endif
 # if defined(OPENSSL_NO_LIBUNBOUND) && !defined(NO_LIBUNBOUND)
 #  define NO_LIBUNBOUND
 # endif
 # if defined(OPENSSL_NO_MD2) && !defined(NO_MD2)
 #  define NO_MD2
-# endif
-# if defined(OPENSSL_NO_MD4) && !defined(NO_MD4)
-#  define NO_MD4
-# endif
-# if defined(OPENSSL_NO_MDC2) && !defined(NO_MDC2)
-#  define NO_MDC2
-# endif
-# if defined(OPENSSL_NO_OBJECTS) && !defined(NO_OBJECTS)
-#  define NO_OBJECTS
-# endif
-# if defined(OPENSSL_NO_OCSP) && !defined(NO_OCSP)
-#  define NO_OCSP
-# endif
-# if defined(OPENSSL_NO_PEM) && !defined(NO_PEM)
-#  define NO_PEM
-# endif
-# if defined(OPENSSL_NO_PKCS12) && !defined(NO_PKCS12)
-#  define NO_PKCS12
-# endif
-# if defined(OPENSSL_NO_PKCS7) && !defined(NO_PKCS7)
-#  define NO_PKCS7
-# endif
-# if defined(OPENSSL_NO_RC2) && !defined(NO_RC2)
-#  define NO_RC2
-# endif
-# if defined(OPENSSL_NO_RC4) && !defined(NO_RC4)
-#  define NO_RC4
 # endif
 # if defined(OPENSSL_NO_RC5) && !defined(NO_RC5)
 #  define NO_RC5
@@ -269,65 +86,17 @@ extern "C" {
 # if defined(OPENSSL_NO_RFC3779) && !defined(NO_RFC3779)
 #  define NO_RFC3779
 # endif
-# if defined(OPENSSL_NO_RIPEMD) && !defined(NO_RIPEMD)
-#  define NO_RIPEMD
-# endif
-# if defined(OPENSSL_NO_RSA) && !defined(NO_RSA)
-#  define NO_RSA
-# endif
-# if defined(OPENSSL_NO_RSAX) && !defined(NO_RSAX)
-#  define NO_RSAX
-# endif
 # if defined(OPENSSL_NO_SCTP) && !defined(NO_SCTP)
 #  define NO_SCTP
-# endif
-# if defined(OPENSSL_NO_SEED) && !defined(NO_SEED)
-#  define NO_SEED
-# endif
-# if defined(OPENSSL_NO_SOCK) && !defined(NO_SOCK)
-#  define NO_SOCK
-# endif
-# if defined(OPENSSL_NO_SRP) && !defined(NO_SRP)
-#  define NO_SRP
-# endif
-# if defined(OPENSSL_NO_SRTP) && !defined(NO_SRTP)
-#  define NO_SRTP
 # endif
 # if defined(OPENSSL_NO_SSL_TRACE) && !defined(NO_SSL_TRACE)
 #  define NO_SSL_TRACE
 # endif
-# if defined(OPENSSL_NO_SSL2) && !defined(NO_SSL2)
-#  define NO_SSL2
-# endif
-# if defined(OPENSSL_NO_SSL3) && !defined(NO_SSL3)
-#  define NO_SSL3
-# endif
 # if defined(OPENSSL_NO_STORE) && !defined(NO_STORE)
 #  define NO_STORE
 # endif
-# if defined(OPENSSL_NO_TLS1) && !defined(NO_TLS1)
-#  define NO_TLS1
-# endif
-# if defined(OPENSSL_NO_TLSEXT) && !defined(NO_TLSEXT)
-#  define NO_TLSEXT
-# endif
-# if defined(OPENSSL_NO_TS) && !defined(NO_TS)
-#  define NO_TS
-# endif
-# if defined(OPENSSL_NO_UI) && !defined(NO_UI)
-#  define NO_UI
-# endif
 # if defined(OPENSSL_NO_UNIT_TEST) && !defined(NO_UNIT_TEST)
 #  define NO_UNIT_TEST
-# endif
-# if defined(OPENSSL_NO_WHIRPOOL) && !defined(NO_WHIRPOOL)
-#  define NO_WHIRPOOL
-# endif
-# if defined(OPENSSL_NO_X509) && !defined(NO_X509)
-#  define NO_X509
-# endif
-# if defined(OPENSSL_NO_X509V3) && !defined(NO_X509V3)
-#  define NO_X509V3
 # endif
 #endif
 
@@ -338,8 +107,8 @@ extern "C" {
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/Users/abelenko/Projects/NowSecure/nsencryption-ios/external/build/arm64/lib/engines"
-#define OPENSSLDIR "/Users/abelenko/Projects/NowSecure/nsencryption-ios/external/build/arm64"
+#define ENGINESDIR "/Users/abelenko/Projects/NowSecure/nscrypto-cpp/external/build/armv7s/lib/engines"
+#define OPENSSLDIR "/Users/abelenko/Projects/NowSecure/nscrypto-cpp/external/build/armv7s"
 #endif
 #endif
 
