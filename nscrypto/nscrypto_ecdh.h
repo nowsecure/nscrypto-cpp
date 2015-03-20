@@ -31,7 +31,7 @@
  
  @field public key (std::string)
  */
-using keypair_t = std::tuple<std::string, std::string>;
+typedef std::tuple<std::string, std::string> keypair_t;
 
 /*!
  @typedef ecdh_encrypted_t
@@ -44,7 +44,7 @@ using keypair_t = std::tuple<std::string, std::string>;
  
  @field ephemeral public key (std::string)
  */
-using ecdh_encrypted_t = std::tuple<std::string, std::string, std::string>;
+typedef std::tuple<std::string, std::string, std::string> ecdh_encrypted_t;
 
 /*!
  @functiongroup Key Generation

@@ -1,8 +1,9 @@
 #include "nscrypto_ecdh.h"
 
-#include <functional>
-#include <vector>
 #include <cassert>
+#include <functional>
+#include <memory>
+#include <vector>
 
 #include <stdint.h>
 
@@ -15,7 +16,7 @@
 #ifdef _NSCRYPTO_EXTRA_LOGGING
     #define LogMsg(frmt, ...)   fprintf(stderr, "%s: " frmt "\n", __FUNCTION__, ##__VA_ARGS__)
 #else
-    #define LogMsg(frmt, ...)   ((void*)0)
+    #define LogMsg(frmt, ...)
 #endif //_NSCRYPTO_EXTRA_LOGGING
 
 #define LogTrace()              LogMsg("")
