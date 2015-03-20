@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60B1361AB2D41B006B6A16 /* vp_ecdh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */; };
+		1D60B1361AB2D41B006B6A16 /* vp_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */; };
 		1DA1DC2B1AADB7E900A69496 /* nscrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DA1DC2A1AADB7E900A69496 /* nscrypto.h */; };
 		1DA1DC431AADB85700A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
-		1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cpp */; };
+		1DA1DC4B1AADDB7900A69496 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cc */; };
 		1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1D60B1341AB2D41B006B6A16 /* vp_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp_ecdh.h; sourceTree = "<group>"; };
-		1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vp_ecdh.cpp; sourceTree = "<group>"; };
+		1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vp_ecdh.cc; sourceTree = "<group>"; };
 		1D60B1371AB2E9B4006B6A16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1D60B1381AB2E9B4006B6A16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1DA1DC271AADB7E900A69496 /* libnscrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnscrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +46,7 @@
 		1DA1DC411AADB85700A69496 /* nscrypto_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nscrypto_ecdh.h; sourceTree = "<group>"; };
 		1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nscrypto_ecdh.cc; sourceTree = "<group>"; };
 		1DA1DC481AADDB7900A69496 /* nscryptoTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscryptoTests; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DA1DC4A1AADDB7900A69496 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1DA1DC4A1AADDB7900A69496 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				1D60B1341AB2D41B006B6A16 /* vp_ecdh.h */,
-				1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */,
-				1DA1DC4A1AADDB7900A69496 /* main.cpp */,
+				1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */,
+				1DA1DC4A1AADDB7900A69496 /* main.cc */,
 			);
 			path = nscryptoTests;
 			sourceTree = "<group>";
@@ -193,8 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */,
-				1D60B1361AB2D41B006B6A16 /* vp_ecdh.cpp in Sources */,
-				1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */,
+				1D60B1361AB2D41B006B6A16 /* vp_ecdh.cc in Sources */,
+				1DA1DC4B1AADDB7900A69496 /* main.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
