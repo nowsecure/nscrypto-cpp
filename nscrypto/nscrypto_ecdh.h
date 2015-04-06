@@ -7,13 +7,14 @@
  This scheme is suitable for "store-and-forward" scenarios and provides 
  perfect forward secresy for sender (but not for recipient).
  
- @compilerflag -lcrypto
+ @compilerflag `-DUSE_LIBCRYPTO` and  `-lcrypto` if using OpenSSL backend;
+   `-DUSE_MBEDTLS` and `-lmbedtls` if using mbed TLS backend.
  
  @author NowSecure (Andrey Belenko)
  
- @version 0.1
+ @version 0.2
  
- @updated 2015-03-11
+ @updated 2015-04-06
  */
 
 #ifndef __NSCRYPTO_ECDH_H__

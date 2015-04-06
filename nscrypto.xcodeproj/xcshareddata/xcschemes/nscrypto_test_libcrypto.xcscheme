@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DA1DC261AADB7E900A69496"
-               BuildableName = "libnscrypto.a"
-               BlueprintName = "nscrypto"
-               ReferencedContainer = "container:nscrypto.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
-               BuildableName = "nscryptoTests"
-               BlueprintName = "nscryptoTests"
+               BuildableName = "nscrypto_test_libcrypto"
+               BlueprintName = "nscrypto_test_libcrypto"
                ReferencedContainer = "container:nscrypto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,45 +28,36 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
-               BuildableName = "nscryptoTests"
-               BlueprintName = "nscryptoTests"
-               ReferencedContainer = "container:nscrypto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA1DC261AADB7E900A69496"
-            BuildableName = "libnscrypto.a"
-            BlueprintName = "nscrypto"
+            BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
+            BuildableName = "nscrypto_test_libcrypto"
+            BlueprintName = "nscrypto_test_libcrypto"
             ReferencedContainer = "container:nscrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA1DC261AADB7E900A69496"
-            BuildableName = "libnscrypto.a"
-            BlueprintName = "nscrypto"
+            BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
+            BuildableName = "nscrypto_test_libcrypto"
+            BlueprintName = "nscrypto_test_libcrypto"
             ReferencedContainer = "container:nscrypto.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,18 +67,19 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA1DC261AADB7E900A69496"
-            BuildableName = "libnscrypto.a"
-            BlueprintName = "nscrypto"
+            BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
+            BuildableName = "nscrypto_test_libcrypto"
+            BlueprintName = "nscrypto_test_libcrypto"
             ReferencedContainer = "container:nscrypto.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
