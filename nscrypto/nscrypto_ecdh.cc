@@ -90,6 +90,21 @@ static int f_rng(__unused void* p_rng, unsigned char* bytes, size_t count) {
     
     return POLARSSL_ERR_ENTROPY_SOURCE_FAILED;
 }
+#elif defined(__linux__)
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <unistd.h>
+static int f_rng(void* p_rng, unsigned char* bytes, size_t count) {
+    int fd = open("/dev/urandom", O_RDONLY);
+    if (fd >= 0) {
+        ssize_t cb = read(fd, bytes, count);
+        close(fd);
+        return ((ssize_t)count == cb) ? 0 : POLARSSL_ERR_ENTROPY_SOURCE_FAILED;
+    }
+
+    return POLARSSL_ERR_ENTROPY_SOURCE_FAILED;
+}
 #else
 #error No RNG function defined for current platform
 #endif // __APPLE__
@@ -631,7 +646,7 @@ ECKEY ECKEY_import_private(const std::string& data) {
             break;
         }
         
-        if ((ret = ret = mpi_read_binary(&key->d, p, len)) != 0) {
+        if ((ret = mpi_read_binary(&key->d, p, len)) != 0) {
             break;
         }
         
