@@ -29,12 +29,14 @@ using std::tie;
 
 static size_t length(0);
 
+int test_export_import();
+
 int main(int argc, char* const argv[]) {
     int result(0);
     
     auto session = Catch::Session();
     
-    for (length = 1; length <= 65535; length += 15) {
+    for (length = 1; length <= 65535; length += 127) {
         printf("length = %zu\n", length);
         
         result = session.run(argc, argv);
@@ -84,6 +86,8 @@ TEST_CASE("nscrypto ecdh", "[nscrypto]") {
     // CHECK: generated keys are not equal
     REQUIRE(s_priv != r_priv);
     REQUIRE(s_pub != r_pub);
+    
+    REQUIRE(0 == test_export_import());
     
     string s_id("sender"), r_id("recipient");
     string msg(random_string(length));

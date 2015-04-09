@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
-               BuildableName = "nscryptoTests"
-               BlueprintName = "nscryptoTests"
+               BlueprintIdentifier = "1DF453011ABC5010008E8A3F"
+               BuildableName = "nscrypto_test_mbedtls"
+               BlueprintName = "nscrypto_test_mbedtls"
                ReferencedContainer = "container:nscrypto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
-            BuildableName = "nscryptoTests"
-            BlueprintName = "nscryptoTests"
+            BlueprintIdentifier = "1DF453011ABC5010008E8A3F"
+            BuildableName = "nscrypto_test_mbedtls"
+            BlueprintName = "nscrypto_test_mbedtls"
             ReferencedContainer = "container:nscrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -44,7 +44,7 @@
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -52,9 +52,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
-            BuildableName = "nscryptoTests"
-            BlueprintName = "nscryptoTests"
+            BlueprintIdentifier = "1DF453011ABC5010008E8A3F"
+            BuildableName = "nscrypto_test_mbedtls"
+            BlueprintName = "nscrypto_test_mbedtls"
             ReferencedContainer = "container:nscrypto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -71,15 +71,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DA1DC471AADDB7900A69496"
-            BuildableName = "nscryptoTests"
-            BlueprintName = "nscryptoTests"
+            BlueprintIdentifier = "1DF453011ABC5010008E8A3F"
+            BuildableName = "nscrypto_test_mbedtls"
+            BlueprintName = "nscrypto_test_mbedtls"
             ReferencedContainer = "container:nscrypto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Release">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

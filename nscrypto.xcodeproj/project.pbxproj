@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60B1361AB2D41B006B6A16 /* vp_ecdh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */; };
+		1D60B1361AB2D41B006B6A16 /* vp_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */; };
 		1DA1DC2B1AADB7E900A69496 /* nscrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DA1DC2A1AADB7E900A69496 /* nscrypto.h */; };
 		1DA1DC431AADB85700A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
-		1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cpp */; };
+		1DA1DC4B1AADDB7900A69496 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cc */; };
 		1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
+		1DF452F91ABC4F3B008E8A3F /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
+		1DF452FC1ABC4F3B008E8A3F /* nscrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DA1DC2A1AADB7E900A69496 /* nscrypto.h */; };
+		1DF453031ABC5010008E8A3F /* nscrypto_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */; settings = {COMPILER_FLAGS = "-Wall -Wextra"; }; };
+		1DF453041ABC5010008E8A3F /* vp_ecdh.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */; };
+		1DF453051ABC5010008E8A3F /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1DC4A1AADDB7900A69496 /* main.cc */; };
+		1DF4530D1ABC86C7008E8A3F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF4530C1ABC86C7008E8A3F /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,19 +40,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1DF452FB1ABC4F3B008E8A3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1DF452FC1ABC4F3B008E8A3F /* nscrypto.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF453071ABC5010008E8A3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D60B1341AB2D41B006B6A16 /* vp_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vp_ecdh.h; sourceTree = "<group>"; };
-		1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vp_ecdh.cpp; sourceTree = "<group>"; };
+		1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vp_ecdh.cc; sourceTree = "<group>"; };
 		1D60B1371AB2E9B4006B6A16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1D60B1381AB2E9B4006B6A16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		1DA1DC271AADB7E900A69496 /* libnscrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnscrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA1DC271AADB7E900A69496 /* libnscrypto_libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnscrypto_libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA1DC2A1AADB7E900A69496 /* nscrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nscrypto.h; sourceTree = "<group>"; };
 		1DA1DC411AADB85700A69496 /* nscrypto_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nscrypto_ecdh.h; sourceTree = "<group>"; };
 		1DA1DC421AADB85700A69496 /* nscrypto_ecdh.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nscrypto_ecdh.cc; sourceTree = "<group>"; };
-		1DA1DC481AADDB7900A69496 /* nscryptoTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscryptoTests; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DA1DC4A1AADDB7900A69496 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1DA1DC481AADDB7900A69496 /* nscrypto_test_libcrypto */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscrypto_test_libcrypto; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA1DC4A1AADDB7900A69496 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		1DF453001ABC4F3B008E8A3F /* libnscrypto_mbedtls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnscrypto_mbedtls.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF4530B1ABC5010008E8A3F /* nscrypto_test_mbedtls */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscrypto_test_mbedtls; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF4530C1ABC86C7008E8A3F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +92,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DF452FA1ABC4F3B008E8A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF453061ABC5010008E8A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF4530D1ABC86C7008E8A3F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1DA1DC1E1AADB7E900A69496 = {
 			isa = PBXGroup;
 			children = (
+				1DF4530C1ABC86C7008E8A3F /* Security.framework */,
 				1D60B1371AB2E9B4006B6A16 /* README.md */,
 				1D60B1381AB2E9B4006B6A16 /* LICENSE */,
 				1DA1DC291AADB7E900A69496 /* nscrypto */,
@@ -81,8 +125,10 @@
 		1DA1DC281AADB7E900A69496 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1DA1DC271AADB7E900A69496 /* libnscrypto.a */,
-				1DA1DC481AADDB7900A69496 /* nscryptoTests */,
+				1DA1DC271AADB7E900A69496 /* libnscrypto_libcrypto.a */,
+				1DA1DC481AADDB7900A69496 /* nscrypto_test_libcrypto */,
+				1DF453001ABC4F3B008E8A3F /* libnscrypto_mbedtls.a */,
+				1DF4530B1ABC5010008E8A3F /* nscrypto_test_mbedtls */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				1D60B1341AB2D41B006B6A16 /* vp_ecdh.h */,
-				1D60B1351AB2D41B006B6A16 /* vp_ecdh.cpp */,
-				1DA1DC4A1AADDB7900A69496 /* main.cpp */,
+				1D60B1351AB2D41B006B6A16 /* vp_ecdh.cc */,
+				1DA1DC4A1AADDB7900A69496 /* main.cc */,
 			);
 			path = nscryptoTests;
 			sourceTree = "<group>";
@@ -110,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1DA1DC261AADB7E900A69496 /* nscrypto */ = {
+		1DA1DC261AADB7E900A69496 /* nscrypto_libcrypto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DA1DC3B1AADB7E900A69496 /* Build configuration list for PBXNativeTarget "nscrypto" */;
+			buildConfigurationList = 1DA1DC3B1AADB7E900A69496 /* Build configuration list for PBXNativeTarget "nscrypto_libcrypto" */;
 			buildPhases = (
 				1DA1DC231AADB7E900A69496 /* Sources */,
 				1DA1DC241AADB7E900A69496 /* Frameworks */,
@@ -122,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = nscrypto;
+			name = nscrypto_libcrypto;
 			productName = nscrypto;
-			productReference = 1DA1DC271AADB7E900A69496 /* libnscrypto.a */;
+			productReference = 1DA1DC271AADB7E900A69496 /* libnscrypto_libcrypto.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1DA1DC471AADDB7900A69496 /* nscryptoTests */ = {
+		1DA1DC471AADDB7900A69496 /* nscrypto_test_libcrypto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DA1DC4C1AADDB7900A69496 /* Build configuration list for PBXNativeTarget "nscryptoTests" */;
+			buildConfigurationList = 1DA1DC4C1AADDB7900A69496 /* Build configuration list for PBXNativeTarget "nscrypto_test_libcrypto" */;
 			buildPhases = (
 				1DA1DC441AADDB7900A69496 /* Sources */,
 				1DA1DC451AADDB7900A69496 /* Frameworks */,
@@ -139,9 +185,43 @@
 			);
 			dependencies = (
 			);
-			name = nscryptoTests;
+			name = nscrypto_test_libcrypto;
 			productName = nscryptoTests;
-			productReference = 1DA1DC481AADDB7900A69496 /* nscryptoTests */;
+			productReference = 1DA1DC481AADDB7900A69496 /* nscrypto_test_libcrypto */;
+			productType = "com.apple.product-type.tool";
+		};
+		1DF452F71ABC4F3B008E8A3F /* nscrypto_mbedtls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF452FD1ABC4F3B008E8A3F /* Build configuration list for PBXNativeTarget "nscrypto_mbedtls" */;
+			buildPhases = (
+				1DF452F81ABC4F3B008E8A3F /* Sources */,
+				1DF452FA1ABC4F3B008E8A3F /* Frameworks */,
+				1DF452FB1ABC4F3B008E8A3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nscrypto_mbedtls;
+			productName = nscrypto;
+			productReference = 1DF453001ABC4F3B008E8A3F /* libnscrypto_mbedtls.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1DF453011ABC5010008E8A3F /* nscrypto_test_mbedtls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF453081ABC5010008E8A3F /* Build configuration list for PBXNativeTarget "nscrypto_test_mbedtls" */;
+			buildPhases = (
+				1DF453021ABC5010008E8A3F /* Sources */,
+				1DF453061ABC5010008E8A3F /* Frameworks */,
+				1DF453071ABC5010008E8A3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nscrypto_test_mbedtls;
+			productName = nscryptoTests;
+			productReference = 1DF4530B1ABC5010008E8A3F /* nscrypto_test_mbedtls */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -173,8 +253,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1DA1DC261AADB7E900A69496 /* nscrypto */,
-				1DA1DC471AADDB7900A69496 /* nscryptoTests */,
+				1DA1DC261AADB7E900A69496 /* nscrypto_libcrypto */,
+				1DF452F71ABC4F3B008E8A3F /* nscrypto_mbedtls */,
+				1DA1DC471AADDB7900A69496 /* nscrypto_test_libcrypto */,
+				1DF453011ABC5010008E8A3F /* nscrypto_test_mbedtls */,
 			);
 		};
 /* End PBXProject section */
@@ -193,8 +275,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA1DC511AADDC6600A69496 /* nscrypto_ecdh.cc in Sources */,
-				1D60B1361AB2D41B006B6A16 /* vp_ecdh.cpp in Sources */,
-				1DA1DC4B1AADDB7900A69496 /* main.cpp in Sources */,
+				1D60B1361AB2D41B006B6A16 /* vp_ecdh.cc in Sources */,
+				1DA1DC4B1AADDB7900A69496 /* main.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF452F81ABC4F3B008E8A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF452F91ABC4F3B008E8A3F /* nscrypto_ecdh.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF453021ABC5010008E8A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF453031ABC5010008E8A3F /* nscrypto_ecdh.cc in Sources */,
+				1DF453041ABC5010008E8A3F /* vp_ecdh.cc in Sources */,
+				1DF453051ABC5010008E8A3F /* main.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,10 +323,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -297,9 +394,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					USE_LIBCRYPTO,
+				);
 				GENERATE_MASTER_OBJECT_FILE = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = nscrypto_libcrypto;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 			};
@@ -311,9 +411,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = USE_LIBCRYPTO;
 				GENERATE_MASTER_OBJECT_FILE = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = nscrypto_libcrypto;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 			};
@@ -323,8 +423,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					USE_LIBCRYPTO,
+					_NSCRYPTO_TESTS,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lcrypto";
@@ -336,9 +437,78 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_LIBCRYPTO,
+					_NSCRYPTO_TESTS,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lcrypto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1DF452FE1ABC4F3B008E8A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					USE_MBEDTLS,
+				);
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				PRODUCT_NAME = nscrypto_mbedtls;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		1DF452FF1ABC4F3B008E8A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = USE_MBEDTLS;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				PRODUCT_NAME = nscrypto_mbedtls;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		1DF453091ABC5010008E8A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					USE_MBEDTLS,
+					_NSCRYPTO_TESTS,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-lmbedtls",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = nscrypto_test_mbedtls;
+			};
+			name = Debug;
+		};
+		1DF4530A1ABC5010008E8A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_MBEDTLS,
+					_NSCRYPTO_TESTS,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-lmbedtls",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = nscrypto_test_mbedtls;
 			};
 			name = Release;
 		};
@@ -354,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DA1DC3B1AADB7E900A69496 /* Build configuration list for PBXNativeTarget "nscrypto" */ = {
+		1DA1DC3B1AADB7E900A69496 /* Build configuration list for PBXNativeTarget "nscrypto_libcrypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DA1DC3C1AADB7E900A69496 /* Debug */,
@@ -363,11 +533,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DA1DC4C1AADDB7900A69496 /* Build configuration list for PBXNativeTarget "nscryptoTests" */ = {
+		1DA1DC4C1AADDB7900A69496 /* Build configuration list for PBXNativeTarget "nscrypto_test_libcrypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DA1DC4D1AADDB7900A69496 /* Debug */,
 				1DA1DC4E1AADDB7900A69496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF452FD1ABC4F3B008E8A3F /* Build configuration list for PBXNativeTarget "nscrypto_mbedtls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF452FE1ABC4F3B008E8A3F /* Debug */,
+				1DF452FF1ABC4F3B008E8A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF453081ABC5010008E8A3F /* Build configuration list for PBXNativeTarget "nscrypto_test_mbedtls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF453091ABC5010008E8A3F /* Debug */,
+				1DF4530A1ABC5010008E8A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
